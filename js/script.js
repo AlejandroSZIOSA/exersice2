@@ -58,6 +58,7 @@ const articles = document.querySelectorAll("main article");
 
 articles.forEach((a) => {
   a.onclick = function () {
-    console.log("hola");
+    let name = a.querySelector("h2").textContent;
+    console.log("Hi I am article", name);
   };
 });
